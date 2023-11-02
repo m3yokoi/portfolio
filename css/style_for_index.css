@@ -12,19 +12,21 @@
 }
 
 /*==================== About　=====================*/
-.about__container {
-    display: flex;
-}
 
+.clearfix {
+    clear: both;
+}
 
 .drawing {
     border: 8px solid var(--maincolor);
-    min-width: 200px;
+    min-width: 180px;
     height: auto;
+    float: left;
+    margin-right: 1.5em;
 
 }
 .about__heading {
-    margin: 0;
+    margin: 0 0 1em 0;
 }
 
 .about__text {
