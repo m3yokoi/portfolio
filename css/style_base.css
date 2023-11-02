@@ -71,6 +71,7 @@ p {
     position: fixed;
     top: 0;
     right: 0;
+    height: 80vh;
     background-color: #d7cec7dc;
     padding: 60px 5%;
     transform: translateX(100%);
