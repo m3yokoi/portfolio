@@ -1,0 +1,268 @@
+@charset "utf-8";
+/*モバイルサイズ*/
+
+/*====================全体・共通設定=====================*/
+:root {
+    --maincolor: #d7cec7;
+    --letter: #565656;
+    --accent: #76323f;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Itim', 'cursive','Noto Sans JP', sans-serif;
+    color: var(--letter);
+
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+.wrapper {
+    padding: 5%;
+}
+
+.scroller {
+    width: 100%;
+}
+
+section {
+    margin-bottom: 80px;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+    line-height: 1;
+    font-family: 'Itim', 'cursive', 'Zen Kaku Gothic New', sans-serif;
+    border-bottom: 1px solid var(--maincolor);
+}
+
+h2::first-letter {
+    font-size: 1.5em;
+    color: var(--accent);
+}
+
+h3 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: 'Zen Kaku Gothic New', sans-serif;    
+}
+
+p {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* TOP画 */
+
+#topimage{
+    text-align: center;
+}
+/* ここまで */
+
+/*==================== header =====================*/
+.menu-panel {
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #d7cec7dc;
+    padding: 60px 5%;
+    transform: translateX(100%);
+    transition: 0.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.135, 0.15, 0.86);
+    /*強めのease-out*/
+
+
+}
+
+.open {
+    transform: translateX(0);
+    box-shadow: 6px 6px 10px 0px rgba(189, 189, 189, 0.4);
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.gnav__list {
+    padding: 0;
+}
+
+.gnav__item {
+    list-style-type: none;
+    padding: 1em 0;
+    font-size: 1.5em;
+}
+
+.gnav__link {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    color: var(--letter);
+}
+
+.gnav__link:hover {
+    color: var(--accent);
+}
+
+.gnav__link::after {
+    position: absolute;
+    left: 0;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: var(--maincolor);
+    bottom: -1px;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: 0.35s;
+}
+
+.gnav__link:hover::after {
+    transform: scale(1, 1);
+    background-color: var(--accent);
+}
+
+/*ボタン外側*/
+.openbtn {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #eee;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.35);
+    z-index: 900;
+}
+
+/*ボタン内側*/
+.openbtn span {
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+}
+
+.openbtn span:nth-of-type(1),
+.openbtn span:nth-of-type(3) {
+    height: 2px;
+    background: var(--letter);
+    width: 62%;
+    left: 10px;
+}
+
+.openbtn span:nth-of-type(1) {
+    top: 13px;
+}
+
+.openbtn span:nth-of-type(2) {
+    top: 19px;
+    left: 11px;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    color: var(--letter);
+}
+
+.openbtn span:nth-of-type(3) {
+    top: 36px;
+}
+
+/*activeクラスが付与されると線が回転して×になり、Menu表記をしている2つ目の要素が透過して消える*/
+.openbtn.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3) {
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+
+/*==================== footer =====================*/
+footer {
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+/*===========================
+        レスポンシブ用
+===========================*/
+/*タブレットサイズ*/
+@media (min-width: 768px) {
+
+    .wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0;
+    }
+
+    .menu-panel {
+        width: auto;
+        height: 100vh;
+        background-color: var(--maincolor);
+        position: sticky;
+        top: 0;
+        z-index: 200;
+        transform: translateX(0);
+        transition: 0s;
+        box-shadow: 6px 6px 10px 0px rgba(189, 189, 189, 0.4);
+        padding-top: 20px;
+
+    }
+
+    .scroller {
+        width: 80%;
+        padding: 5%;
+
+    }
+
+    .openbtn {
+        display: none;
+    }
+
+    .skill-details {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 5vw 8vw;
+    }
+}
+
+/*PCサイズ(大画面)*/
+@media (min-width:1280px) {
+    .menu-panel {
+        width: auto;
+        max-width: 300px;
+    }
+
+    .background {
+        width: 15%;
+        background-image: url(../images/bg.png);
+        background-repeat: repeat-y;
+        background-size: contain;
+    }
+
+    .scroller {
+        width: 70%;
+    }
+
+    #skill {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}

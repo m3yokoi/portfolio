@@ -1,0 +1,143 @@
+@charset "utf-8";
+/*モバイルサイズ*/
+
+/*==================== ローディング画面＆トップ =====================*/
+#loading {
+    background-color: var(--maincolor);
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    display: grid;
+    place-items: center;
+}
+
+/*==================== About　=====================*/
+.about__container {
+    display: flex;
+}
+
+
+.drawing {
+    border: 8px solid var(--maincolor);
+    min-width: 200px;
+    height: auto;
+
+}
+.about__heading {
+    margin: 0;
+}
+
+.about__text {
+    line-height: 1.8;
+}
+
+div+.about__text {
+    margin: 0 0 2em 1em;
+}
+/*==================== Works　=====================*/
+.example {
+    height: auto;
+    margin-bottom: 30px;
+}
+
+button {
+    width: 100px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    position: relative;
+    width: 50px;
+    margin: 10px;
+}
+
+.line1 {
+    height: 1px;
+    background-color: #000;
+}
+
+.line2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: right bottom;
+    width: 8px;
+    height: 1px;
+    background-color: #000;
+    transform: rotate(45deg);
+}
+
+#works h2::first-letter {
+    margin-right: -4px;
+}
+/*==================== skill =====================*/
+.skill__leadtext {
+    margin-bottom: 50px;
+}
+
+.skill-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10vw 8vw;
+}
+
+.skill__container {
+    padding: 5%;
+}
+
+.skill__container--item {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.skill__container--icon {
+    padding: 0 10% 10% 10%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.skill__container--heading {
+margin: 10px 0;
+}
+
+.skill__container--text {
+    font-size: 0.8em;
+}
+
+.skill__container--text:first-of-type {
+    margin-bottom: 1.5em;
+}
+
+/*====================　Contact =====================*/
+#form-run {
+    background-color: #ccc;
+    height: 400px;
+}
+
+/*===========================
+        レスポンシブ用
+===========================*/
+/*タブレットサイズ*/
+@media (min-width: 768px) {
+
+    .gnav__wrapper {
+        opacity: 0;
+    }
+    .skill-details {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 5vw 8vw;
+    }
+}
+
+/*PCサイズ(大画面)*/
+@media (min-width:1280px) {
+    
+
+    #skill {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}

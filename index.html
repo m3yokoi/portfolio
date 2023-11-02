@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- reset.css modern-css-reset -->
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <link rel="stylesheet" href="css/style_base.css">
+    <link rel="stylesheet" href="css/style_for_index.css">
+    <!-- googlefonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Itim&display=swap&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- ローディング画面 -->
+    <div id="loading">
+        <p class="loading__image">loading...</p>
+    </div>
+    <div class="wrapper">
+        <header class="menu-panel">
+
+            <div class="gnav__wrapper">
+               
+                <nav>
+                   
+                    <ul class="gnav__list">
+                        <li class="gnav__item"><a class="gnav__link" href="#topimage">Top</a></li>
+                        <li class="gnav__item"><a class="gnav__link" href="#about">About</a></li>
+                        <li class="gnav__item"><a class="gnav__link" href="#works">Works</a></li>
+                        <li class="gnav__item"><a class="gnav__link" href="#skill">Skill</a></li>
+                        <li class="gnav__item"><a class="gnav__link" href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="background"></div>
+        <div class="scroller">
+
+            <div class="openbtn"><span></span><span>Menu</span><span></span></div>
+
+            <h1>MISA KAJIHARA's Portfolio</h1>
+            
+            <section id="about">
+                <h2 class="about__title">About</h2>
+
+     <h3 class="about__heading">自己紹介</h3>
+                <div class="about__container">
+                    <div>
+                   
+                        <img class="drawing" src="images/top.gif" alt="">
+                    </div>
+                        
+                        <p class="about__text">
+                            生まれも育ちも関西ですが、2023年春、満を持して広島の地に足を踏み入れました。
+                            <br>
+                            WEB業界へは未経験からの転職となりますが、持ち前の真面目さと粘り強さで「出来るまで」こつこつ学び身に着けてきた知識と技術があります。
+                            <br>
+                            前職ではマネジメントの経験もあるので、デザインやコーディング業務に加えてディレクション業務にも挑戦してみたいです。<br>
+                            絵を描くことや、編み物・裁縫など細かい作業が得意です。</p>
+                    
+                </div>
+                <h3 class="about__heading">大切にしていること</h3>
+                <p class="about__text">まずは基本に忠実に。WEBサイトを作るときは、誰にとっても分かりやすいレイアウトや心地よい操作感が得られるような丁寧な組み立てを心がけています。<br>
+                    デザインを考えるときは、商品のコンセプトやテーマとなるもののイメージを膨らませて、見る人や使う人にストーリーを感じてもらえるように意識しています。
+                </p>
+            </section>
+            <section id="works">
+                <h2>Works</h2>
+                <div class="example">
+                    <h3>サイト制作</h3>
+                    <img src="images/jikosyokai.png" alt="">
+                    <a href="works-list.html#webpage"><button>more <div class="arrow">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div></button></a>
+                </div>
+                <div class="example">
+                    <h3>パッケージデザイン</h3>
+                    <img src="images/package01.png" alt="">
+                    <a href="works-list.html#design"><button>くわしく見る&gt;</button></a>
+                </div>
+                <div class="example">
+                    <h3>バナー</h3>
+                    <img src="images/banner.png" alt="">
+                    <a href="works-list.html#banner"><button>くわしく見る&gt;</button></a>
+                </div>
+            </section>
+            <section id="skill">
+                <h2>Skill</h2>
+                <p class="skill__leadtext">2023年6月より、パソコンスクールHA*NAでWEB制作について学んできました。</p>
+                <div class="skill-details">
+                    <figure class="skill__container">
+                        <figcaption class="skill__container--item">HTML5</figcaption>
+                        <img src="images/HTML5.png" alt="" class="skill__container--icon">
+                        <h4 class="skill__container--heading">できること</h4>
+                        <p class="skill__container--text">テキストや画像の内容に応じたタグ付けと基本的なWEBページの構築。</p>
+                        <h4 class="skill__container--heading">習得中</h4>
+                        <p class="skill__container--text">CSS設計（現段階はBEMの概要が分かる程度）</p>
+                    </figure>
+                    <figure class="skill__container">
+                        <figcaption class="skill__container--item">CSS3</figcaption>
+                        <img src="images/CSS3.png" alt="" class="skill__container--icon">
+                        <h4 class="skill__container--heading">できること</h4>
+                        <p class="skill__container--text">要素の装飾やレイアウトの変更。レスポンシブ対応も可能。
+                        </p>
+                        <h4 class="skill__container--heading">習得中</h4>
+                        <p class="skill__container--text">属性セレクタの使用方法</p>
+                    </figure>
+                    <figure class="skill__container">
+                        <figcaption class="skill__container--item">Java Script</figcaption>
+                        <img src="images/js.png" alt="" class="skill__container--icon">
+                        <h4 class="skill__container--heading">できること</h4>
+                        <p class="skill__container--text">簡単なアニメーションの設定や、ユーザーの操作に合わせたイベント処理</p>
+                        <h4 class="skill__container--heading">習得中</h4>
+                        <p class="skill__container--text">ライブラリを活用した、より複雑な動的ページの作成</p>
+                    </figure>
+                    <figure class="skill__container">
+                        <figcaption class="skill__container--item">Wordpress</figcaption>
+                        <img src="images/Wordpress.png" alt="" class="skill__container--icon">
+                        <!-- <h4 class="skill__container--heading">できること</h4>
+                        <p class="skill__container--text">　　</p> -->
+                        <h4 class="skill__container--heading">習得中</h4>
+                        <p class="skill__container--text">PHPを用いた処理・テーマ作成・テンプレートファイルの作成（？）</p>
+                    </figure>
+                    <!-- <figure class="skill__container">
+                        <figcaption class="skill__container--item">Figma</figcaption>
+                        <img src="images/Figma.png" alt="" class="skill__container--icon">
+                        <h4 class="skill__container--heading">できること</h4>
+                        <p class="skill__container--text">ページ遷移アニメーションなどを含んだデザインカンプの作成</p>
+                    </figure> -->
+                    <figure class="skill__container">
+                        <figcaption class="skill__container--item">Photoshop</figcaption>
+                        <img src="images/ps.png" alt="" class="skill__container--icon">
+                        <h4 class="skill__container--heading">できること</h4>
+                        <p class="skill__container--text">画像内の不要物の削除や人物のレタッチ処理全般。アニメーションGIFの作成</p>
+                    </figure>
+                    <figure class="skill__container">
+                        <figcaption class="skill__container--item">Illustrator</figcaption>
+                        <img src="images/ai.png" alt="" class="skill__container--icon">
+                        <h4 class="skill__container--heading">できること</h4>
+                        <p class="skill__container--text">図形作成・文字入力によるアイコンやロゴイラストの作成。</p>
+                    </figure>
+                    <!-- <figure class="skill__container">
+                        <figcaption class="skill__container--item">Premiere Pro</figcaption>
+                        <img src="images/pr.png" alt="" class="skill__container--icon">
+                        <h4 class="skill__container--heading">できること</h4>
+                        <p class="skill__container--text">カット編集やテロップ挿入、映像の補正（明度・彩度）など
+                            </p>
+                    </figure> -->
+                </div>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <div id="form-run">
+                    <p>ここは埋め込みで問い合わせフォームいれる
+                    </p>
+                </div>
+            </section>
+            <footer>
+                <small>2023 &copy;Misa Kajihara</small>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

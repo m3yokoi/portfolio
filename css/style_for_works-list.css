@@ -1,0 +1,88 @@
+@charset "utf-8";
+/*モバイルサイズ*/
+html {
+    scroll-behavior: auto;
+}
+
+/*==================== works-list =====================*/
+.works-list__title {
+    margin-top: 50px;
+}
+
+.works-list-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10vw 2vw;
+}
+
+.works-list__container {
+    padding: 5%;
+    background-color: #ece2ce;
+    border-radius: 10px;
+	transition: all 0.4s ease 0s;
+}
+
+.works-list-details a {
+    text-decoration: none;
+    color: var(--letter);
+    display: block;
+}
+
+.works-list__container:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.works-list__container--item {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.works-list__container--thumbnail {
+    margin: 0 auto;
+}
+
+.works-list__container--heading {
+margin: 10px 0;
+}
+
+.works-list__container--text {
+    font-size: 0.8em;
+    flex-grow: 1;
+}
+
+.works-list__container--text:first-of-type {
+    margin-bottom: 1.5em;
+}
+/*===========================
+        個別詳細ページ
+===========================*/
+article h3 {
+    border: 1px solid var(--letter);
+    font-size: 1em;
+    font-weight: normal;
+    display: inline-block;
+    padding: 3px;
+    margin-bottom: 0;
+}
+
+article p {
+    margin: 5px;
+}
+
+/*===========================
+        レスポンシブ用
+===========================*/
+/*タブレットサイズ*/
+@media (min-width: 768px) {
+
+    .works-list-details {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 5vw 2vw;
+    }
+}
+
+/*PCサイズ(大画面)*/
+@media (min-width:1280px) {
+
+
+}
