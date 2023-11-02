@@ -72,11 +72,12 @@ p {
     top: 0;
     right: 0;
     height: auto;
-    background-color: #d7cec7dc;
+    background-image: linear-gradient(177deg, rgba(215, 206, 199, 0.86), rgba(227, 194, 194, 0.86) 90%);
     padding: 60px 5%;
     transform: translateX(100%);
     transition: 0.5s;
     transition-timing-function: cubic-bezier(0.075, 0.135, 0.15, 0.86);
+    z-index: 100;
     /*強めのease-out*/
 
 

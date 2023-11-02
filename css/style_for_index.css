@@ -18,7 +18,7 @@
 }
 
 .drawing {
-    border: 8px solid var(--maincolor);
+    border: 8px dotted var(--maincolor);
     min-width: 180px;
     height: auto;
     float: left;
@@ -26,50 +26,34 @@
 
 }
 .about__heading {
-    margin: 0 0 1em 0;
+    margin: 2em 0 1em 0;
 }
 
 .about__text {
     line-height: 1.8;
 }
 
-div+.about__text {
-    margin: 0 0 2em 1em;
-}
 /*==================== Works　=====================*/
 .example {
     height: auto;
     margin-bottom: 30px;
 }
 
-button {
-    width: 100px;
-    border: 1px solid #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.example__btn-container {
+    text-align: center;
 }
 
-.arrow {
-    position: relative;
-    width: 50px;
-    margin: 10px;
+.example__btn {
+    border: none;
+    border-radius: 5px;
+    background-color: var(--accent);
+    padding-top: 1px;
 }
 
-.line1 {
-    height: 1px;
-    background-color: #000;
-}
-
-.line2 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform-origin: right bottom;
-    width: 8px;
-    height: 1px;
-    background-color: #000;
-    transform: rotate(45deg);
+.example__btn a{
+    text-decoration: none;
+    color: #eee;
+    display: block;
 }
 
 #works h2::first-letter {

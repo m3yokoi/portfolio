@@ -17,9 +17,10 @@ html {
 
 .works-list__container {
     padding: 5%;
-    background-color: #ece2ce;
+    background-color: #eee;
     border-radius: 10px;
 	transition: all 0.4s ease 0s;
+    z-index: 10;
 }
 
 .works-list-details a {
