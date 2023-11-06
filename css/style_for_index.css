@@ -3,7 +3,7 @@
 
 /*==================== ローディング画面＆トップ =====================*/
 #loading {
-    background-color: var(--maincolor);
+    background-image: linear-gradient(177deg, rgba(215, 206, 199), rgba(227, 194, 194));
     position: fixed;
     inset: 0;
     z-index: 999;
@@ -49,6 +49,11 @@
     background-color: var(--accent);
     padding-top: 1px;
 }
+
+.example__btn:hover {
+    background-color: var(--maincolor);
+}
+
 
 .example__btn a{
     text-decoration: none;

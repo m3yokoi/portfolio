@@ -200,6 +200,8 @@ h1 {
 footer {
     text-align: center;
     font-family: 'Noto Sans JP', sans-serif;
+    border-top: 1px solid var(--maincolor);
+padding-top: 50px;
 }
 
 
@@ -254,9 +256,9 @@ footer {
 
     .background {
         width: 15%;
-        background-image: url(../images/bg.png);
+        background-image: url(../images/bg3.png);
         background-repeat: repeat-y;
-        background-size: contain;
+        background-position: 0 -5px;
     }
 
     .scroller {
