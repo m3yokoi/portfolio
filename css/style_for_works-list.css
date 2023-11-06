@@ -80,10 +80,7 @@ margin: 10px 0;
     transition: 0.3s;
 }
 
-.sum__container {
-    display: flex;
-    gap: 5%;
-}
+
 
 .sum__heading {
     border: 1px solid var(--maincolor);
@@ -98,6 +95,26 @@ margin: 10px 0;
 article p {
     margin-bottom: 10px;
 }
+
+.pagenation {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pagenation-prev,
+.pagenation-next,
+.pagenation-back {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 1em;
+    color: #999;
+}
+
+.pagenation-prev:hover,
+.pagenation-next:hover,
+.pagenation-back:hover {
+    color: var(--accent);
+} 
 
 /*====== 9-1-1 縦線が動いてスクロールを促す =======*/
 
@@ -167,6 +184,11 @@ article p {
     .works-list-details {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 5vw 2vw;
+    }
+
+    .sum__container {
+        display: flex;
+        gap: 10%;
     }
 }
 
