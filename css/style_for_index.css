@@ -39,6 +39,7 @@
     margin-bottom: 30px;
 }
 
+
 .example__btn-container {
     text-align: center;
 }
@@ -49,6 +50,8 @@
     padding: 2px 7px 4px 7px;
     text-decoration: none;
     color: #eee;
+    display: inline-block;
+    margin-top: 20px;
 }
 
 .example__btn:hover {

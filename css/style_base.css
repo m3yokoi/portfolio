@@ -265,8 +265,7 @@ padding-top: 50px;
         width: 70%;
     }
 
-    #skill {
-        max-width: 1000px;
-        margin: 0 auto;
+    section {
+        max-width: 1200px;
     }
 }
