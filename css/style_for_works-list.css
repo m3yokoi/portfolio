@@ -83,7 +83,19 @@ article {
     transition: 0.3s;
 }
 
+.mockup {
+        background-size: cover;
+    border-radius: 10px;
+    padding: 30px 50px 0 50px;
+}
 
+.siteimage {
+    background-image: url(../images/dream-bg.jpg);
+}
+.package {
+    
+    background-image: url(../images/pink-bg.jpeg);
+}
 
 .sum__heading {
     border: 1px solid var(--maincolor);
