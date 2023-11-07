@@ -44,10 +44,11 @@
 }
 
 .example__btn {
-    border: none;
     border-radius: 5px;
     background-color: var(--accent);
-    padding-top: 1px;
+    padding: 2px 7px 4px 7px;
+    text-decoration: none;
+    color: #eee;
 }
 
 .example__btn:hover {
@@ -126,9 +127,4 @@ margin: 10px 0;
 /*PCサイズ(大画面)*/
 @media (min-width:1280px) {
     
-
-    #skill {
-        max-width: 1000px;
-        margin: 0 auto;
-    }
 }

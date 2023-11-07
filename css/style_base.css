@@ -21,6 +21,7 @@ body {
 img {
     max-width: 100%;
     vertical-align: bottom;
+    margin: 0 auto;
 }
 
 .wrapper {
@@ -257,7 +258,6 @@ padding-top: 50px;
     .background {
         width: 15%;
         background-image: url(../images/bg3.png);
-        background-repeat: repeat-y;
         background-position: 0 -5px;
     }
 
