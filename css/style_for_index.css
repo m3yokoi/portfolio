@@ -107,9 +107,9 @@ margin: 10px 0;
 }
 
 /*====================　Contact =====================*/
-#form-run {
-    background-color: #ccc;
-    height: 400px;
+.contact-form {
+    height: 50vh;
+    overflow: scroll;
 }
 
 /*===========================
