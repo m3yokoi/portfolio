@@ -208,6 +208,7 @@ article p {
     display: flex;
     justify-content: center;
         align-items: center;
+        margin-bottom: 80px;
   }
   /* カルーセル内容 */
   .contains {
