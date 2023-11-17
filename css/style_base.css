@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    font-family: 'Itim', 'cursive','Noto Sans JP', sans-serif;
+    font-family: 'Itim', 'cursive', 'Noto Sans JP', sans-serif;
     color: var(--letter);
 
 }
@@ -52,7 +52,7 @@ h2::first-letter {
 h3 {
     margin-top: 50px;
     margin-bottom: 10px;
-    font-family: 'Zen Kaku Gothic New', sans-serif;    
+    font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 
 p {
@@ -197,7 +197,7 @@ footer {
     text-align: center;
     font-family: 'Noto Sans JP', sans-serif;
     border-top: 1px solid var(--maincolor);
-padding-top: 50px;
+    padding-top: 50px;
 }
 
 
