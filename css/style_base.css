@@ -87,6 +87,7 @@ p {
 h1 {
     margin: 0;
     text-align: center;
+    margin-top: 50px;
 }
 
 .gnav__list {
@@ -237,6 +238,9 @@ footer {
         display: none;
     }
 
+    h1 {
+        margin-top: 0;
+    }
     .skill-details {
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
         gap: 5vw 8vw;
@@ -245,6 +249,7 @@ footer {
 
 /*PCサイズ(大画面)*/
 @media (min-width:1280px) {
+
     .menu-panel {
         width: auto;
         max-width: 300px;
