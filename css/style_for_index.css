@@ -19,7 +19,7 @@
 
 .drawing {
     border: 8px dotted rgb(227, 194, 194);
-    border-radius: 30px;
+    border-radius: 20px;
     min-width: 180px;
     max-width: 240px;
     height: auto;
@@ -74,11 +74,6 @@
 /*==================== works-list =====================*/
 .works-list__title {
     margin-top: 50px;
-  }
-  
-  .works-list__leadtext {
-    padding-right: 75px;
-    margin-bottom: 2em;
   }
   
   .works-list-details {
@@ -155,7 +150,7 @@
   .contains {
     /* 下の.slideも同じサイズにしてください。 */
     width: 100%;
-    height: 400px;
+    height: 350px;
     overflow: hidden;
     position: relative;
     padding: 0;
@@ -172,7 +167,7 @@
   .slide {
     /* 上の.containsも同じサイズにしてください。 */
     width: 100%;
-    height: 300px;
+    height: 350px;
     position: absolute;
     /* スライドの初期値は選択されていないので透明にしておく */
     opacity: 0;
@@ -309,9 +304,7 @@
 }
 
 /*==================== skill =====================*/
-.skill__leadtext {
-    margin-bottom: 50px;
-}
+
 
 .skill-details {
     display: grid;
